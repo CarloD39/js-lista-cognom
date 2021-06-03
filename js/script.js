@@ -5,5 +5,7 @@ var output = document.getElementById('user-names');
 LastNames.push(NewName);
 LastNames.sort();
 
+var PositionNew = LastNames.indexOf(NewName)+1;
 
-output.innerHTML = LastNames + '<br/>' + LastNames.indexOf(NewName) ;
+
+output.innerHTML = LastNames + '<br/>' + PositionNew ;
